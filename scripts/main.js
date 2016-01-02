@@ -81,14 +81,13 @@ window.onload=function() {
     var pages = tabcon.getElementsByTagName("div");
     for (var i = 1; i < pages.length; i++) {
         pages.item(i).style.display="none";
-    };
-
+    }
     //this adds click event to tabs
     var tabs = container.getElementsByTagName("li");
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].onclick=displayPage;
     }
-}
+};
 
 
 // on click of one of tabs
