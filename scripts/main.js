@@ -47,6 +47,7 @@ function getgameinfo(){
 // Function that renders leaderboard into a tab
 
 function getleader() {
+    document.getElementById("ladder").innerHTML="<p>Please wait...</p>";
     var playersapi = "http://twistedtest-xleaguetest.rhcloud.com/players";
     $.getJSON (playersapi, function(data){
         var output3 = "<table><tr><th>Rank</th><th>Player</th><th>Rating</th><th>Played</th><th>Win</th><th>Loss</th></tr>";
@@ -54,11 +55,9 @@ function getleader() {
             output3 += "<tr><td>" + data.players[i].Rank + "</td><td>" + data.players[i].Name + "</td><td>" + data.players[i].ELO + "</td><td>" + data.players[i].Played + "</td><td>" + data.players[i].W + "</td><td>" + data.players[i].L + "</td></tr>";
         }
         output3 += "</table>";
-        console.log(output3);
         document.getElementById("ladder").innerHTML=output3;
     });
 }
-
 
 // Listerens for enter to do desired function for text inputs
 

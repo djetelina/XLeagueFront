@@ -40,9 +40,9 @@ input {
     margin-bottom: 4px;
 }
 iframe {
-    border: 1px solid deepskyblue;
+    border: 2px solid deepskyblue;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 4px;
 }
 table, th, td {
     padding: 8px;
@@ -111,6 +111,12 @@ tr:hover {
     border-bottom: 2px solid forestgreen;
     margin-bottom: 5px;
 }
+.Send{
+    cursor: pointer;
+}
+.Send:active{
+    background-color: forestgreen;
+}
 
 
 /*IDs*/
@@ -174,6 +180,10 @@ tr:hover {
 /*Ladder is span and not div, because of Tabs javascript that sets every div inside wrapper to hidden (fix wanted)*/
 #ladder {
     display:block;
+}
+#ladderrefresh {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
