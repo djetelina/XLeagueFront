@@ -1,3 +1,9 @@
+/*Global*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
 html {
     height: 100%;
     background-color: black;
@@ -7,6 +13,77 @@ html {
 body {
     height: 100%;
 }
+h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+p {
+    margin: 3px;
+}
+a {
+    color: deepskyblue;
+    text-decoration:none;
+}
+a:hover {
+    font-size: 1.1em;
+}
+input {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: steelblue;
+    color: white;
+    border-width: 0;
+    margin-bottom: 4px;
+}
+iframe {
+    border: 1px solid deepskyblue;
+    overflow: hidden;
+    border-radius: 4px;
+}
+table, th, td {
+    padding: 8px;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+    border: 2px solid deepskyblue;
+}
+th {
+    padding: 3px 15px;
+    background-color: forestgreen;
+    font-weight: normal;
+    font-size: 15px;
+    border-bottom: 2px solid deepskyblue;
+}
+td {
+    border: 1px solid lightskyblue;
+}
+tr:nth-child(odd) {
+    background-color: #444;
+}
+tr:hover {
+    background-color: forestgreen;
+}
+
+::-webkit-input-placeholder {
+    color: lightgrey;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: lightgrey;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: lightgrey;
+}
+:-ms-input-placeholder {
+    color: lightgrey;
+}
+
+/*Classes*/
+
 
 .header {
     display: block;
@@ -20,6 +97,25 @@ body {
     font-size: 1em;
     font-weight: normal;
 }
+.code {
+    font-family: "Courier New",serif;
+    padding: 1px 5px;
+    background: forestgreen;
+    border: 1px solid deepskyblue;
+}
+.textBox {
+    width: 71%;
+}
+.timestamp {
+    display: block;
+    border-bottom: 2px solid forestgreen;
+    margin-bottom: 5px;
+}
+
+
+/*IDs*/
+
+
 #queueinfo {
     float:right;
     width: 23%;
@@ -75,94 +171,14 @@ body {
     width: 75%;
     padding: 0;
 }
+/*Ladder is span and not div, because of Tabs javascript that sets every div inside wrapper to hidden (fix wanted)*/
 #ladder {
     display:block;
 }
 
-h2 {
-    margin: 10px 0;
-    text-align: center;
-}
-h3 {
-    margin: 10px 0;
-    text-align: center;
-}
-p {
-    margin: 3px;
-}
-input {
-    padding: 4px;
-    border-radius: 4px;
-    background-color: steelblue;
-    color: white;
-    border-width: 0;
-    margin-bottom: 4px;
-}
-iframe {
-    border: 1px solid deepskyblue;
-    overflow: hidden;
-    border-radius: 4px;
-}
-table, th, td {
-    padding: 8px;
-    border-collapse: collapse;
-}
-table {
-    width: 100%;
-    border: 2px solid deepskyblue;
-}
-th {
-    padding: 3px 15px;
-    background-color: forestgreen;
-    font-weight: normal;
-    font-size: 15px;
-    border-bottom: 2px solid deepskyblue;
-}
-td {
-    border: 1px solid lightskyblue;
-}
-tr:nth-child(odd) {
-    background-color: #444;
-}
-tr:hover {
-    background-color: forestgreen;
-}
-.code {
-    font-family: "Courier New",serif;
-    padding: 1px 5px;
-    background: forestgreen;
-    border: 1px solid deepskyblue;
-}
-.textBox {
-    width: 71%;
-}
-.timestamp {
-    display: block;
-    border-bottom: 2px solid forestgreen;
-    margin-bottom: 5px;
-}
-::-webkit-input-placeholder {
-    color: lightgrey;
-}
 
-:-moz-placeholder { /* Firefox 18- */
-    color: lightgrey;
-}
+/**TABS - copied from a tutorial (then modified and optimized**/
 
-::-moz-placeholder {  /* Firefox 19+ */
-    color: lightgrey;
-}
-
-:-ms-input-placeholder {
-    color: lightgrey;
-}
-
-/**TABS**/
-
-* {
-    padding: 0;
-    margin: 0;
-}
 
 #wrapper{
     padding-top: 20px;
@@ -170,32 +186,19 @@ tr:hover {
     width:1000px;
     margin:40px 0;
 }
-
-a {
-    color: deepskyblue;
-    text-decoration:none;
-}
-
-a:hover {
-    font-size: 1.1em;
-}
-
 #tabContainer {
     width: 100%;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-
 #tabs{
     height:30px;
     overflow:hidden;
 }
-
 #tabs > ul{
     font-size: 1em;
     list-style:none;
 }
-
 #tabs > ul > li{
     margin:0 2px 0 0;
     padding:7px 10px;
@@ -209,18 +212,15 @@ a:hover {
     border-radius: 4px 4px 0 0;
     background: forestgreen;
 }
-
 #tabs > ul > li:hover{
     background: deepskyblue;
     cursor:pointer;
     color: #333;
 }
-
 #tabs > ul > li.tabActiveHeader{
     background: deepskyblue;
     color: #333;
 }
-
 #tabscontent {
     border: 1px solid deepskyblue;
     -moz-border-radius: 0 4px 4px 4px;

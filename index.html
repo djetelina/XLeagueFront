@@ -21,12 +21,14 @@
     </div>
     <div id="queueinfo">
         <h2 class="header">Queue information</h2>
+        <!--queue is replaced by javascript-->
         <div id="queue">
             <p>Please wait...</p>
         </div>
     </div>
     <div id="playerinfo">
         <h2 class="header">Player stats</h2>
+        <!--playerstats is replaced by javascript, any changes in there should also be reflected in scripts/main.js-->
         <div id="playerstats">
             <input class="textBox" id="textinput" type="text" placeholder="Player nickname" onkeyup="checkKey(event)">
             <input type="button" class="Send" value="Check" onclick="getplayerinfo();">
@@ -38,6 +40,7 @@
     </div>
     <div id="gameinfo">
         <h2 class="header">Game info</h2>
+        <!--gamestats is replaced by javascript, any changes in there should also be reflected in scripts/main.js-->
         <div id="gamestats">
             <input class="textBox" id="textinput2" type="text" placeholder="Game ID" onkeyup="checkKey2(event)">
             <input type="button" class="Send" value="Check" onclick="getgameinfo();">
@@ -50,6 +53,7 @@
         <div id="tabContainer">
             <div id="tabs">
                 <ul>
+                    <!--id tabHeader_X should match tabpage_X in tabscontent div-->
                     <li id="tabHeader_1">News</li>
                     <li id="tabHeader_2">How to use</li>
                     <li id="tabHeader_3">Leaderboard</li>

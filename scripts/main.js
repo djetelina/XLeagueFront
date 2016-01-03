@@ -1,3 +1,4 @@
+// Queue function, periodically checks API for variables and inserts them. Period 4000 = 4 seconds
 
 window.setInterval(function(){
     var xleagueapi= "http://twistedtest-xleaguetest.rhcloud.com/variables";
@@ -10,6 +11,9 @@ window.setInterval(function(){
         document.getElementById("queue").innerHTML=output;
     });
 }, 4000);
+
+// Function that gets information about player from API and inserts into page
+
 function getplayerinfo(){
     var name = document.getElementById('textinput').value;
     var playerapi = "http://twistedtest-xleaguetest.rhcloud.com/player/" + name;
@@ -22,6 +26,9 @@ function getplayerinfo(){
         document.getElementById("playerstats").innerHTML=output2;
     });
 }
+
+// Function that gets information about game from API and inserts into page
+
 function getgameinfo(){
     var id = document.getElementById('textinput2').value;
     var gameid = "http://twistedtest-xleaguetest.rhcloud.com/game/" + id;
@@ -35,6 +42,10 @@ function getgameinfo(){
         document.getElementById("gamestats").innerHTML=output2;
     });
 }
+
+
+// Function that renders leaderboard into a tab
+
 function getleader() {
     var playersapi = "http://twistedtest-xleaguetest.rhcloud.com/players";
     $.getJSON (playersapi, function(data){
@@ -48,6 +59,9 @@ function getleader() {
     });
 }
 
+
+// Listerens for enter to do desired function for text inputs
+
 function checkKey(e){
     var enterKey = 13;
     if (e.which == enterKey){
@@ -60,7 +74,12 @@ function checkKey2(e){
         getgameinfo();
     }
 }
+
+// Tabs javascript, copied from internet
+// Wanted: Link to ID to open header with that id
+
 window.onload=function() {
+    // Call to render leaderboard on page load
     getleader();
 
     // get tab container
@@ -88,8 +107,6 @@ window.onload=function() {
         tabs[i].onclick=displayPage;
     }
 };
-
-
 // on click of one of tabs
 function displayPage() {
     var current = this.parentNode.getAttribute("data-current");
