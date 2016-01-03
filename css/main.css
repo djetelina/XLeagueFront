@@ -6,8 +6,7 @@
 }
 html {
     height: 100%;
-    background-image: url(../img/bg.jpg);
-    background-color: black;
+    background: black url(../img/bg.jpg);
     color: white;
     font: .8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
