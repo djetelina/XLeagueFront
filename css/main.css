@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    background-color: dimgrey;
+    background-color: black;
     color: white;
     font: .8em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -66,7 +66,9 @@ body {
 #title {
     font-weight: bold;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
+    font-size: 3.5em;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px deepskyblue, 0 0 30px deepskyblue, 0 0 40px deepskyblue, 0 0 50px deepskyblue, 0 0 75px deepskyblue;
 }
 #chat {
     float: left;
@@ -76,6 +78,7 @@ body {
 #ladder {
     display:block;
 }
+
 h2 {
     margin: 10px 0;
     text-align: center;
@@ -133,7 +136,11 @@ tr:hover {
 .textBox {
     width: 71%;
 }
-
+.timestamp {
+    display: block;
+    border-bottom: 2px solid forestgreen;
+    margin-bottom: 5px;
+}
 ::-webkit-input-placeholder {
     color: lightgrey;
 }
