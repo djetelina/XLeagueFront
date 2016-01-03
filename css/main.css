@@ -232,7 +232,7 @@ tr:hover {
     color: #333;
 }
 #tabscontent {
-    border: 1px solid deepskyblue;
+    border: 2px solid deepskyblue;
     -moz-border-radius: 0 4px 4px 4px;
     border-radius: 0 4px 4px 4px;
     padding:10px 10px 25px;
