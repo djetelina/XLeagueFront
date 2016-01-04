@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>XLeague</title>
+    <title><?php echo $page_title; ?></title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="David Jetelina">
-    <meta name="description" content="Inhouse league for XMage limited">
+    <meta name="description" content="<?php echo $page_description; ?>">
     <meta name="keywords" content="MTG, Magic: The Gathering, Magic, xmage, free, draft, sealed, league, ladder">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
