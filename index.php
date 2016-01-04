@@ -1,7 +1,9 @@
+
+
+<?php
 $page_title = "XLeague";
 $page_description = "Inhouse league for XMage limited";
-
-<?php include('includes/header.php'); ?>
+include('includes/header.php'); ?>
 
 <body>
 <div id="container">
