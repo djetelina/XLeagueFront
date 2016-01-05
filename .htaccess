@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule ^(([^/]+/)*[^./]+)$ includes/$1.php [NC,L]
