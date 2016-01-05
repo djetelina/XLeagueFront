@@ -1,6 +1,6 @@
 ## News
 
-<span class="timestamp">5nd January 2016</span> Frontend seems ready for initial wave of testing. Recruit people if you can :)
+<span class="timestamp">5th January 2016</span> Frontend seems ready for initial wave of testing. Recruit people if you can :)
 
 ****
 
