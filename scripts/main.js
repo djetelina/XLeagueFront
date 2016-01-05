@@ -81,6 +81,29 @@ window.onload=function() {
     // Call to render leaderboard on page load
     getleader();
 
+    //Form to not redirect
+    $("#vouchform").submit(function() {
+        var response = grecaptcha.getResponse();
+
+        if(response.length == 0) {
+
+        }
+        //reCaptcha not verified
+
+        else {
+        //reCaptch verified
+            $.post("http://api.djetelina.cz/reqvouch", $("#vouchform").serialize(),
+                //Take our repsonse, and replace whatever is in the "formResponse"
+                //div with it.
+                function(data) {
+                    $("#vouchform").hide('slide', function() {$("#formResponse").html(data).show('slide');});
+                }
+            );
+        }
+        return false;
+    });
+
+
     // get tab container
     var container = document.getElementById("tabContainer");
     var tabcon = document.getElementById("tabscontent");
@@ -96,7 +119,7 @@ window.onload=function() {
     navitem.setAttribute("class","tabActiveHeader");
 
     //hide two tab contents we don't need
-    var pages = tabcon.getElementsByTagName("div");
+    var pages = tabcon.getElementsByClassName("tabpage");
     for (var i = 1; i < pages.length; i++) {
         pages.item(i).style.display="none";
     }

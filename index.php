@@ -1,5 +1,3 @@
-
-
 <?php
 $page_title = "XLeague";
 $page_description = "Inhouse league for XMage limited";
@@ -67,6 +65,8 @@ include('includes/header.php'); ?>
                     $contents = file_get_contents('content/how_to_use.md');
                     $parsedown = new parsedown();
                     echo $parsedown->text($contents);
+                    ?><?php
+                    include('includes/request_vouch.php');
                     ?>
                 </div>
                 <div class="tabpage" id="tabpage_3">

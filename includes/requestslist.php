@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title><?php echo $page_title; ?></title>
+    <title>XLeague - Vouch requests</title>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="David Jetelina">
-    <meta name="description" content="<?php echo $page_description; ?>">
+    <meta name="description" content="Approve based on this.">
     <meta name="keywords" content="MTG, Magic: The Gathering, Magic, xmage, free, draft, sealed, league, ladder">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="../scripts/main.js"></script>
+    <script type="text/javascript" src="../scripts/vouchrequests.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -46,3 +46,11 @@
     <meta name="msapplication-config" content="../img/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
+<body>
+<div id="container">
+    <h1 id="title">XLeague</h1>
+    <h2 class="header">Vouch requests</h2>
+    <div id="vouchrequests"></div>
+</div>
+</body>
+</html>

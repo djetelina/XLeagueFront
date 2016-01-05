@@ -47,6 +47,16 @@ iframe {
     overflow: hidden;
     border-radius: 0 4px 4px 4px;
 }
+textarea {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: steelblue;
+    color: white;
+    border-width: 0;
+    margin-bottom: 4px;
+    display: table;
+    width: 50%;
+}
 hr {
     border: transparent;
     padding: 10px;
@@ -126,9 +136,6 @@ tr:hover {
 }
 
 
-/*IDs*/
-
-
 #queueinfo {
     float:right;
     width: 23%;
@@ -197,6 +204,23 @@ tr:hover {
     display: table;
     margin: 10px auto;
     padding: 5px 10px;
+}
+#rcaptcha {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#rcaptcha iframe {
+    border: none;
+}
+#vouchrequests {
+    clear:both;
+    width: 100%;
+    -moz-border-radius: 0 4px 4px 4px;
+    border-radius: 0 4px 4px 4px;
+    padding: 10px;
+    border: 2px solid deepskyblue;
+    margin-top: 5px;
+    background: #333;
 }
 
 
