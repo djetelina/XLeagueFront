@@ -6,7 +6,7 @@ Also known as the page you are on right now.
 
 Languages: HTML5, CSS3, JavaScript
 
-GitHub: <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">https://github.com/iScrE4m/XLeagueFront</a>
+GitHub: <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">github.com/iScrE4m/XLeagueFront</a>
 
 ### Backend development
 
@@ -14,7 +14,7 @@ What makes the league work. The GitHub is a bit outdated, since we migrated to a
 
 Languages: Python (on Cyclone framework)
 
-GitHub: <a href="https://github.com/iScrE4m/XLeague" target="_blank">https://github.com/iScrE4m/XLeague</a>
+GitHub: <a href="https://github.com/iScrE4m/XLeague" target="_blank">github.com/iScrE4m/XLeague</a>
 
 ### Financially
 
