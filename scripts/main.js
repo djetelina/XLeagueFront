@@ -1,3 +1,5 @@
+// Script for index.php
+
 // Queue function, periodically checks API for variables and inserts them. Period 4000 = 4 seconds
 
 window.setInterval(function(){

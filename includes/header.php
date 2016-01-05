@@ -1,3 +1,5 @@
+<!--ATM This isn't really made to be included in subpages,we need to adjust scripts for that.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

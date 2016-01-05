@@ -29,7 +29,9 @@ Images ar found there, most of them aren't on git (favicons and their variations
 
 Php files that might be used elsewhere, like page header. Also good for easily accessing parts of the code you want.
 
-* Currently there are no plans for different pages
+## pages
+
+Different pages than index.php
 
 ### scripts folder
 
