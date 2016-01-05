@@ -21,6 +21,9 @@ h3 {
     margin: 10px 0;
     text-align: center;
 }
+h4 {
+    margin: 10px 0;
+}
 p {
     margin: 3px;
 }
@@ -43,6 +46,10 @@ iframe {
     border: 2px solid deepskyblue;
     overflow: hidden;
     border-radius: 0 4px 4px 4px;
+}
+hr {
+    border: transparent;
+    padding: 10px;
 }
 table, th, td {
     padding: 8px;
@@ -185,6 +192,12 @@ tr:hover {
     width: 100%;
     margin-bottom: 10px;
 }
+#donate {
+    font-size: 1.5em;
+    display: table;
+    margin: 10px auto;
+    padding: 5px 10px;
+}
 
 
 /**TABS - copied from a tutorial (then modified and optimized**/
@@ -235,7 +248,7 @@ tr:hover {
     border: 2px solid deepskyblue;
     -moz-border-radius: 0 4px 4px 4px;
     border-radius: 0 4px 4px 4px;
-    padding:10px 10px 25px;
+    padding:10px 10px 10px;
     background: #333; /* old browsers */
     margin:0;
     color: white;

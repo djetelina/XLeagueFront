@@ -55,50 +55,38 @@ include('includes/header.php'); ?>
                 </ul>
             </div>
             <div id="tabscontent">
-                <div class="tabpage" id="tabpage_1">
-                    <h2>News</h2>
-                    <p><span class="timestamp">2nd January 2016</span>We wil be slowly moving towards this page being the only website for XLeague. By the time Oath of the Gatewatch spoilers are finished, this will hopefully be a thing.</p>
+                <div class="tabpage" id="tabpage_1"><?php
+                    require_once('parsedown.php');
+                    $contents = file_get_contents('content/news.md');
+                    $parsedown = new parsedown();
+                    echo $parsedown->text($contents);
+                    ?>
                 </div>
-                <div class="tabpage" id="tabpage_2">
-                    <h2>How to use</h2>
-                    <p>To use XLeague, you need to be vouched on XLeague and registered on <a href="https://gamesurge.net/createaccount/" target="_blank">GameSurge</a>.</p>
-                    <p>Enter your GameSurge nickname in your chat window and connect. When you connect, use <span class="code">/login &lt;GameSurgeNick&gt; &lt;GameSurgePassword&gt;</span> to identify with the network. Bot will not recognize your commands otherwise.</p>
-                    <p>Chat commands to control joining and leaving queue are below the input bar. The others can be found in the right sidebar.</p>
-                    <h3>Getting vouched</h3>
-                    <p>To simplify usage of XLeague, we want to phase out registering to a forum.</p>
-                    <p>When you first connect to the chat, just ask for a judge, if one is available, PM him (click on his name on the right and press PM), introduce yourself and ask for a vouch.</p>
-                    <p><i>You NEED to be logged in to your GameSurge account in order to receive vouch!</i></p>
+                <div class="tabpage" id="tabpage_2"><?php
+                    require_once('parsedown.php');
+                    $contents = file_get_contents('content/how_to_use.md');
+                    $parsedown = new parsedown();
+                    echo $parsedown->text($contents);
+                    ?>
                 </div>
                 <div class="tabpage" id="tabpage_3">
                     <h2>Leaderboard</h2>
                     <input type="button" id="ladderrefresh" class="Send" value="Refresh leaderboard" onclick="getleader();">
                     <span id="ladder"></span>
                 </div>
-                <div class="tabpage" id="tabpage_4">
-                    <h2>Advanced user</h2>
-                    <p>If you don't wish to use this frontend, you can use any IRC client and chat commands.</p>
-                    <p>IRC Network: GameSurge</p>
-                    <p>Channel: #xleague</p>
-                    <h3>Chat commands</h3>
-                    <p><span class="code">.help</span> lists all available commands in PM</p>
-                    <p><span class="code">.join</span> joins queue</p>
-                    <p><span class="code">.leave</span> leaves queue</p>
-                    <p><span class="code">.players</span> Lists players queued for an open game</p>
-                    <p><span class="code">.player &lt;PlayerName&gt;</span> Gets stats of a player</p>
-                    <p><span class="code">.games</span> Lists running games</p>
-                    <p><span class="code">.game &lt;ID&gt;</span> Gets info about a game</p>
-                    <p><span class="code">.card &lt;CardName&gt;</span> Gets info about a card</p>
+                <div class="tabpage" id="tabpage_4"><?php
+                    require_once('parsedown.php');
+                    $contents = file_get_contents('content/advanced_user.md');
+                    $parsedown = new parsedown();
+                    echo $parsedown->text($contents);
+                    ?>
                 </div>
-                <div class="tabpage" id="tabpage_5">
-                    <h2>Contribute</h2>
-                    <h3>Frontend development</h3>
-                    <p>Also known as the page you are on right now.</p>
-                    <p>Languages: HTML5, CSS3, JavaScript</p>
-                    <p>GitHub: <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">Here</a></p>
-                    <h3>Backend development</h3>
-                    <p>What makes the league work. The GitHub is a bit outdated, since we migrated to a server recently and the code hasn't been cleaned up yet.</p>
-                    <p>Languages: Python (on Cyclone framework)</p>
-                    <p>GitHub: <a href="https://github.com/iScrE4m/XLeague" target="_blank">Here</a></p>
+                <div class="tabpage" id="tabpage_5"><?php
+                    require_once('parsedown.php');
+                    $contents = file_get_contents('content/contribute.md');
+                    $parsedown = new parsedown();
+                    echo $parsedown->text($contents);
+                    ?>
                 </div>
             </div>
         </div>
