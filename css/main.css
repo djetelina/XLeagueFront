@@ -190,7 +190,6 @@ tr:hover {
     width: 75%;
     padding: 0;
 }
-/*Ladder is span and not div, because of Tabs javascript that sets every div inside wrapper to hidden (fix wanted)*/
 #ladder {
     display:block;
 }

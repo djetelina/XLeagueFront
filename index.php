@@ -72,7 +72,7 @@ include('includes/header.php'); ?>
                 <div class="tabpage" id="tabpage_3">
                     <h2>Leaderboard</h2>
                     <input type="button" id="ladderrefresh" class="Send" value="Refresh leaderboard" onclick="getleader();">
-                    <span id="ladder"></span>
+                    <div id="ladder"></div>
                 </div>
                 <div class="tabpage" id="tabpage_4"><?php
                     require_once('parsedown.php');
