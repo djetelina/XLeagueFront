@@ -2,7 +2,7 @@
 
 function vouchrequests() {
     document.getElementById("vouchrequests").innerHTML="<p>Please wait...</p>";
-    var requestsapi = "http://api.djetelina.cz/requests";
+    var requestsapi = "http://api.xleague.info/requests";
     $.getJSON (requestsapi, function(data){
         var output4 = "<p>Judges can cofirm requests by using <span class='code'>.confirmvouch &lt;Name&gt;</span> in IRC.</p>";
         output4 += "<p>If you don't see anything below, there are no requests.</p>";

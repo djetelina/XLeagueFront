@@ -1,7 +1,7 @@
 <!--form for vouch requests-->
 
 <div id="vouchingform">
-    <form action="http://api.djetelina.cz/reqvouch" method="post" id="vouchform">
+    <form action="http://api.xleague.info/reqvouch" method="post" id="vouchform">
         <p>Username:</p>
         <input type="text" name="name" placeholder="GameSurge nickname">
         <p>About yourself:</p>

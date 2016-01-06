@@ -3,7 +3,7 @@
 // Queue function, periodically checks API for variables and inserts them. Period 4000 = 4 seconds
 
 window.setInterval(function(){
-    var xleagueapi= "http://api.djetelina.cz/variables";
+    var xleagueapi= "http://api.xleague.info/variables";
     $.getJSON( xleagueapi , function(data) {
         var output="";
         for (var i in data.variables) {
@@ -18,7 +18,7 @@ window.setInterval(function(){
 
 function getplayerinfo(){
     var name = document.getElementById('textinput').value;
-    var playerapi = "http://api.djetelina.cz/player/" + name;
+    var playerapi = "http://api.xleague.info/player/" + name;
     $.getJSON(playerapi, function(data) {
         var output2 = '<input class="textBox" id="textinput" type="text" placeholder="Player nickname" onkeyup="checkKey(event)">\n<input type="button" class="Send" value="Check" onclick="getplayerinfo();">';
         for (var i in data.player) {
@@ -33,7 +33,7 @@ function getplayerinfo(){
 
 function getgameinfo(){
     var id = document.getElementById('textinput2').value;
-    var gameid = "http://api.djetelina.cz/game/" + id;
+    var gameid = "http://api.xleague.info/game/" + id;
     $.getJSON(gameid, function(data) {
         var output2 = '<input class="textBox" id="textinput2" type="text" placeholder="Game ID" onkeyup="checkKey2(event)">\n<input type="button" class="Send" value="Check" onclick="getgameinfo();">';
         for (var i in data.game) {
@@ -50,7 +50,7 @@ function getgameinfo(){
 
 function getleader() {
     document.getElementById("ladder").innerHTML="<p>Please wait...</p>";
-    var playersapi = "http://api.djetelina.cz/players";
+    var playersapi = "http://api.xleague.info/players";
     $.getJSON (playersapi, function(data){
         var output3 = "<table><tr><th>Rank</th><th>Player</th><th>Rating</th><th>Played</th><th>Win</th><th>Loss</th></tr>";
         for (var i in data.players) {
@@ -94,7 +94,7 @@ window.onload=function() {
 
         else {
         //reCaptch verified
-            $.post("http://api.djetelina.cz/reqvouch", $("#vouchform").serialize(),
+            $.post("http://api.xleague.info/reqvouch", $("#vouchform").serialize(),
                 //Take our repsonse, and replace whatever is in the "formResponse"
                 //div with it.
                 function(data) {
