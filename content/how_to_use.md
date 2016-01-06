@@ -1,5 +1,13 @@
 ## How to use
 
+### What and where
+
+XLeague is an in-house league for playing Magic on <a href="https://xmage.de/" target="_blank">XMage</a>. 
+
+It was created to play drafts without leavers, to compete for a visible rating and to have a good community around all that. 
+
+This should not be an alternative to playing sanctioned events, but rather a practice tool.
+
 ### Register and get vouch
 
 To play league games, you have to be "vouched" - that means approved user. That way we can eliminate leavers and people that can't behave.

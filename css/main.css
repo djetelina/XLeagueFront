@@ -133,7 +133,27 @@ tr:hover {
 .Send:active{
     background-color: forestgreen;
 }
+.footercell{
+    display: table-cell;
+    border-left: 1px solid forestgreen;
+    border-right: 1px solid forestgreen;
+    width: 8%;
+    padding: 5px 0;
+}
+.footercell a {
+    display:block;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.footercells{
+    display: table-cell;
+    border-left: 1px solid forestgreen;
+    border-right: 1px solid forestgreen;
+    width: 1%;
+}
 
+/*IDs*/
 
 #queueinfo {
     float:right;
@@ -220,7 +240,30 @@ tr:hover {
     margin-top: 5px;
     background: #333;
 }
-
+#footer{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    border-top: 2px solid deepskyblue;
+    display: table;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 1em;
+}
+#footer a:hover{
+    font-size: 1em;
+}
+#footer .fa{
+    color: deepskyblue;
+    font-size: 1.1em;
+}
+#footer a:hover .fa{
+    color: forestgreen;
+}
 
 /**TABS - copied from a tutorial (then modified and optimized**/
 

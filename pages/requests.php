@@ -9,6 +9,7 @@
     <meta name="keywords" content="MTG, Magic: The Gathering, Magic, xmage, free, draft, sealed, league, ladder">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="../scripts/vouchrequests.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -52,5 +53,7 @@
     <h2 class="header">Vouch requests</h2>
     <div id="vouchrequests"></div>
 </div>
+<?php
+include('../includes/footer.php'); ?>
 </body>
 </html>

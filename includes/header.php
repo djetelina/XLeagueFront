@@ -1,3 +1,4 @@
+<!--START header.php include-->
 <!--ATM This isn't really made to be included in subpages,we need to adjust scripts for that.-->
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@
     <meta name="keywords" content="MTG, Magic: The Gathering, Magic, xmage, free, draft, sealed, league, ladder">
 
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="../scripts/main.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -48,3 +50,4 @@
     <meta name="msapplication-config" content="../img/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
+<!--STOP header.php include-->

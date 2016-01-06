@@ -20,7 +20,7 @@ GitHub: <a href="https://github.com/iScrE4m/XLeague" target="_blank">github.com/
 
 #### Current goals 
 
-Purchase of domain
+~~Purchase of domain~~
 
 Better application server (currently running on OpenShift for free)
 

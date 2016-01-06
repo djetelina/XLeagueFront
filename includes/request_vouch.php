@@ -1,5 +1,5 @@
+<!--START request_vouch.php include-->
 <!--form for vouch requests-->
-
 <div id="vouchingform">
     <form action="http://api.xleague.info/reqvouch" method="post" id="vouchform">
         <p>Username:</p>
@@ -11,3 +11,4 @@
     </form>
 </div>
 <div data-role="content" style="display:none" id="formResponse"></div>
+<!--STOP request_vouch.php include-->
