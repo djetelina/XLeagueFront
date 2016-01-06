@@ -11,7 +11,7 @@
          </a>
      </span>
     <span class="footercell">
-        <i class="fa fa-envelope"> Email</i> judges (at) xleague.info
+        <i class="fa fa-envelope"> Email</i> judges@xleague.info
      </span>
     <span class="footercell">
          <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">
