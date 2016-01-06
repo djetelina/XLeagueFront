@@ -1,6 +1,6 @@
 # XLeagueFront
 
-Frontend of XLeague
+Frontend of XLeague - http://xleague.info/
 
 ## What is where
 
