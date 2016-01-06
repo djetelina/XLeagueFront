@@ -14,17 +14,17 @@
         <i class="fa fa-envelope"> Email</i> judges (at) xleague.info
      </span>
     <span class="footercell">
-         <a href="https://github.com/iScrE4m/XLeagueFront">
+         <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">
              <i class="fa fa-github"> GitHub</i> Frontend dev & bugs
          </a>
     </span>
     <span class="footercell">
-         <a href="https://github.com/iScrE4m/XLeague">
+         <a href="https://github.com/iScrE4m/XLeague" target="_blank">
             <i class="fa fa-github"> GitHub</i> Backend dev & bugs
          </a>
      </span>
     <span class="footercell">
-         <a href="http://api.xleague.info/">
+         <a href="http://api.xleague.info/" target="_blank">
              <i class="fa fa-code"> WebAPI</i> api.xleague.info
          </a>
      </span>
