@@ -141,7 +141,7 @@ tr:hover {
     padding: 5px 0;
 }
 .footercell a {
-    display:block;
+    display: block;
     text-decoration: none;
     cursor: pointer;
     color: white;
@@ -153,7 +153,7 @@ tr:hover {
     width: 1%;
 }
 .footercells a {
-    display:block;
+    display: block;
     cursor: pointer;
 }
 

@@ -86,7 +86,7 @@ window.onload=function() {
     // Call to render leaderboard on page load
     getleader();
 
-    //Form to not redirect
+    // Vouch request form handling
     $("#vouchform").submit(function() {
         var response = grecaptcha.getResponse();
 
@@ -101,10 +101,16 @@ window.onload=function() {
                 //Take our repsonse, and replace whatever is in the "formResponse"
                 //div with it.
                 function(data) {
-                    $("#vouchform").hide('slide', function() {$("#formResponse").html(data).show('slide');});
+                    var $mailchimp = $('<div>');
+                    $mailchimp.load("../includes/mailchimp.html", function(){
+
+                    });
+                    $("#vouchform").hide('slide', function() {$("#formResponse").html(data).append($mailchimp).show('slide');});
                 }
+
             );
         }
+
         return false;
     });
 
