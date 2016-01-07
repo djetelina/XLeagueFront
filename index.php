@@ -45,8 +45,8 @@ include('includes/header.php'); ?>
             <div id="tabs">
                 <ul>
                     <!--id tabHeader_X should match tabpage_X in tabscontent div-->
-                    <li id="tabHeader_1">News</li>
-                    <li id="tabHeader_2">How to use</li>
+                    <li id="tabHeader_1">How to use</li>
+                    <li id="tabHeader_2">News</li>
                     <li id="tabHeader_3">Leaderboard</li>
                     <li id="tabHeader_4">Advanced user</li>
                     <li id="tabHeader_5">Contribute</li>
@@ -55,18 +55,18 @@ include('includes/header.php'); ?>
             <div id="tabscontent">
                 <div class="tabpage" id="tabpage_1"><?php
                     require_once('parsedown.php');
-                    $contents = file_get_contents('content/news.md');
-                    $parsedown = new parsedown();
-                    echo $parsedown->text($contents);
-                    ?>
-                </div>
-                <div class="tabpage" id="tabpage_2"><?php
-                    require_once('parsedown.php');
                     $contents = file_get_contents('content/how_to_use.md');
                     $parsedown = new parsedown();
                     echo $parsedown->text($contents);
                     ?><?php
                     include('includes/request_vouch.php');
+                    ?>
+                </div>
+                <div class="tabpage" id="tabpage_2"><?php
+                    require_once('parsedown.php');
+                    $contents = file_get_contents('content/news.md');
+                    $parsedown = new parsedown();
+                    echo $parsedown->text($contents);
                     ?>
                 </div>
                 <div class="tabpage" id="tabpage_3">

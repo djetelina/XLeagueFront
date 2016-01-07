@@ -152,6 +152,10 @@ tr:hover {
     border-right: 1px solid forestgreen;
     width: 1%;
 }
+.footercells a {
+    display:block;
+    cursor: pointer;
+}
 
 /*IDs*/
 

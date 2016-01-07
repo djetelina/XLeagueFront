@@ -2,6 +2,8 @@
 
 Frontend of XLeague - http://xleague.info/
 
+For feedback, ideas, bugs etc. use Issues
+
 ## What is where
 
 ### content folder
@@ -29,7 +31,7 @@ Images ar found there, most of them aren't on git (favicons and their variations
 
 Php files that might be used elsewhere, like page header. Also good for easily accessing parts of the code you want.
 
-## pages
+## pages folder
 
 Different pages than index.php
 

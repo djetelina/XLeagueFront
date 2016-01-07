@@ -76,8 +76,11 @@ function checkKey2(e){
     }
 }
 
-// Tabs javascript, copied from internet
-// Wanted: Link to ID to open header with that id
+//Back to top function
+
+function scrolltop(){
+    $("html, body").animate({scrollTop: 0}, 500);
+}
 
 window.onload=function() {
     // Call to render leaderboard on page load
@@ -105,7 +108,8 @@ window.onload=function() {
         return false;
     });
 
-
+    // Tabs javascript, copied from internet
+    // TODO: Link to ID to open header with that id
     // get tab container
     var container = document.getElementById("tabContainer");
     var tabcon = document.getElementById("tabscontent");

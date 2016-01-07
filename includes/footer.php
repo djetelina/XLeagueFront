@@ -15,12 +15,12 @@
      </span>
     <span class="footercell">
          <a href="https://github.com/iScrE4m/XLeagueFront" target="_blank">
-             <i class="fa fa-github"> GitHub</i> Frontend dev & bugs
+             <i class="fa fa-github"> GitHub</i> Frontend dev & feedback
          </a>
     </span>
     <span class="footercell">
          <a href="https://github.com/iScrE4m/XLeague" target="_blank">
-            <i class="fa fa-github"> GitHub</i> Backend dev & bugs
+            <i class="fa fa-github"> GitHub</i> Backend dev & feedback
          </a>
      </span>
     <span class="footercell">
@@ -28,5 +28,10 @@
              <i class="fa fa-code"> WebAPI</i> api.xleague.info
          </a>
      </span>
+    <span class="footercells">
+        <a href="javascript:scrolltop();" id="scroll" title="Back to top">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+    </span>
 </div>
 <!--STOP footer.php include-->
