@@ -23,5 +23,3 @@ Chat commands to control joining and leaving queue are below the input bar. The 
 When a queue with you is filled, the bot will PM you with a password
 
 ### Request vouch
-
-*You NEED to have a registered GameSurge account in order to receive vouch!*

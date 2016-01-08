@@ -8,7 +8,7 @@ include('includes/header.php'); ?>
     <h1 id="title">XLeague</h1>
     <div id="chat">
         <h2 class="header">Chat</h2>
-        <iframe src="http://widget.mibbit.com/?settings=fe2892791ad32b0bb385677cb2f2e75c&amp;server=irc.web.gamesurge.net&amp;channel=%23XLeague" width="100%" height="467" scrolling="no"></iframe>
+        <iframe src="http://widget.mibbit.com/?settings=fe2892791ad32b0bb385677cb2f2e75c&amp;server=irc.web.gamesurge.net&amp;channel=%23XLeague" width="100%" height="474" scrolling="no"></iframe>
     </div>
     <div id="queueinfo">
         <h2 class="header">Queue information</h2>
@@ -21,7 +21,7 @@ include('includes/header.php'); ?>
         <h2 class="header">Player stats</h2>
         <!--playerstats is replaced by javascript, any changes in there should also be reflected in scripts/main.js-->
         <div id="playerstats">
-            <input class="textBox" id="textinput" type="text" placeholder="Player nickname" onkeyup="checkKey(event)">
+            <input class="textBox" id="textinput" type="text" placeholder="Player nickname" onkeyup="checkKey(event, getplayerinfo())">
             <input type="button" class="Send" value="Check" onclick="getplayerinfo();">
             <p>Player:</p>
             <p>Rank:</p>
@@ -33,7 +33,7 @@ include('includes/header.php'); ?>
         <h2 class="header">Game info</h2>
         <!--gamestats is replaced by javascript, any changes in there should also be reflected in scripts/main.js-->
         <div id="gamestats">
-            <input class="textBox" id="textinput2" type="text" placeholder="Game ID" onkeyup="checkKey2(event)">
+            <input class="textBox" id="textinput2" type="text" placeholder="Game ID" onkeyup="checkKey(event, getgameinfo())">
             <input type="button" class="Send" value="Check" onclick="getgameinfo();">
             <p>ID:</p>
             <p>Format:</p>

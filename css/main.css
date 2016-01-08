@@ -19,7 +19,7 @@ h2 {
 }
 h3 {
     margin: 10px 0;
-    text-align: center;
+    color: deepskyblue;
 }
 h4 {
     margin: 10px 0;
@@ -35,7 +35,7 @@ a:hover {
     font-size: 1.1em;
 }
 input {
-    padding: 4px;
+    padding: 6px;
     border-radius: 4px;
     background-color: steelblue;
     color: white;
@@ -46,6 +46,9 @@ iframe {
     border: 2px solid deepskyblue;
     overflow: hidden;
     border-radius: 0 4px 4px 4px;
+}
+form {
+    margin: 3px;
 }
 textarea {
     padding: 4px;
@@ -120,7 +123,7 @@ tr:hover {
     border: 1px solid deepskyblue;
 }
 .textBox {
-    width: 71%;
+    width: 67%;
 }
 .timestamp {
     display: block;
@@ -268,6 +271,17 @@ tr:hover {
 #footer a:hover .fa{
     color: forestgreen;
 }
+/**Override mailchimp css**/
+input#mc-embedded-subscribe{
+    background-color: steelblue!important;
+}
+form#mc-embedded-subscribe-form{
+    padding: 0!important;
+}
+.mc-field-group{
+    padding-bottom: 10px!important;
+}
+
 
 /**TABS - copied from a tutorial (then modified and optimized**/
 
@@ -317,8 +331,8 @@ tr:hover {
     border: 2px solid deepskyblue;
     -moz-border-radius: 0 4px 4px 4px;
     border-radius: 0 4px 4px 4px;
-    padding:10px 10px 10px;
-    background: #333; /* old browsers */
+    padding:15px 15px 15px;
+    background: #333;
     margin:0;
     color: white;
 }

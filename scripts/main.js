@@ -61,18 +61,14 @@ function getleader() {
     });
 }
 
-// Listerens for enter to do desired function for text inputs
+// Listener for enter to do desired function for text inputs
 
-function checkKey(e){
+function checkKey(e, callback){
     var enterKey = 13;
     if (e.which == enterKey){
-        getplayerinfo();
-    }
-}
-function checkKey2(e){
-    var enterKey = 13;
-    if (e.which == enterKey){
-        getgameinfo();
+        if (callback && typeof(callback) === "function") {
+            callback();
+        }
     }
 }
 

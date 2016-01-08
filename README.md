@@ -23,9 +23,9 @@ Self-explanatory folder for styling sheets
 
 ### img folder
 
-Images ar found there, most of them aren't on git (favicons and their variations)
+Images are found here, most of them aren't on git (favicons and their variations)
 
-* Best way to contribute images, logos and what not would be through chat
+* Best way to contribute images, logos and whatnot would be through chat
 
 ### includes folder
 
