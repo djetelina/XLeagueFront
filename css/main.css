@@ -324,7 +324,7 @@ tr:hover {
     cursor:pointer;
     color: #333;
 }
-.tabActiveHeader{
+#tabs > ul > li.tabActiveHeader{
     background: deepskyblue;
     color: #333;
 }
