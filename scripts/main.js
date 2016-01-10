@@ -65,7 +65,7 @@ function getleader() {
 
 function checkKey(e, callback){
     var enterKey = 13;
-    if (e.which == enterKey){
+    if (e.which === enterKey){
         if (callback && typeof(callback) === "function") {
             callback();
         }

@@ -256,9 +256,9 @@ tr:hover {
     background: #333;
     border-top: 2px solid deepskyblue;
     display: table;
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 1em;
 }
 #footer a:hover{
@@ -272,10 +272,10 @@ tr:hover {
     color: forestgreen;
 }
 /**Override mailchimp css**/
-input#mc-embedded-subscribe{
+#mc-embedded-subscribe{
     background-color: steelblue!important;
 }
-form#mc-embedded-subscribe-form{
+#mc-embedded-subscribe-form{
     padding: 0!important;
 }
 .mc-field-group{
@@ -313,6 +313,7 @@ form#mc-embedded-subscribe-form{
     color:#FFF;
     -webkit-user-select: none;
     -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
@@ -323,7 +324,7 @@ form#mc-embedded-subscribe-form{
     cursor:pointer;
     color: #333;
 }
-#tabs > ul > li.tabActiveHeader{
+.tabActiveHeader{
     background: deepskyblue;
     color: #333;
 }
