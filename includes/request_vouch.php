@@ -1,8 +1,8 @@
 <!--START request_vouch.php include-->
 <!--form for vouch requests-->
 <div id="vouchingform">
-    <p><i>You NEED to have a registered GameSurge account in order to receive vouch!</i></p>
     <form action="http://api.xleague.info/reqvouch" method="post" id="vouchform">
+        <p><i>You NEED to have a registered GameSurge account in order to receive vouch!</i></p>
         <p>Username:</p>
         <input type="text" name="name" placeholder="GameSurge nickname" pattern="[a-zA-Z0-9]+" required>
         <p>About yourself:</p>
