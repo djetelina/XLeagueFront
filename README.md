@@ -1,5 +1,7 @@
 # XLeagueFront
 
+This project is terminated, XMage now supports rating system, so therer's no need for XLeague to exist. Thank you to everyone who contributed in any way!
+
 [![Join the chat at https://gitter.im/iScrE4m/XLeagueFront](https://badges.gitter.im/iScrE4m/XLeagueFront.svg)](https://gitter.im/iScrE4m/XLeagueFront?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 
 Frontend of XLeague - http://xleague.info/
